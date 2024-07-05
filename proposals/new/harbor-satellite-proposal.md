@@ -51,7 +51,7 @@ Harbor Satellite, at its most basic, will run in a single container and will be 
 - **Ground Control** : Is responsible for the artifact synchronization with edge locations and function as a service endpoint for satellites. Ground control will register and authenticate satellites, provide a list of images that should be present on the satellite, and facilitate seamless replication of container images to edge locations. Ground Control includes adapters for different central registries, enabling seamless synchronization of image lists across various sources.
 
 
-### Ground Control
+### Ground Control Responsibilities
 ![Ground Control](../images/harbor-satellite/ground-control.svg)
 
 <p align="center"><em>Ground Control</em></p>
