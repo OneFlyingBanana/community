@@ -38,6 +38,9 @@ Harbor Satellite aims to be resilient, lightweight and will be able to keep func
 Compatibility with all container registries or edge devices can't be guaranteed.
 
 ## Implementation
+![Basic Harbor Satellite Diagram](../images/harbor-satellite/harbor-satellite-diagram.svg)
+
+<p align="center"><em>Basic Harbor Satellite Diagram</em></p>
 
 ### Overall Architecture
 
@@ -47,9 +50,6 @@ Harbor Satellite, at its most basic, will run in a single container and will be 
 - **OCI Registry** : Is responsible for storing required OCI artifacts locally (using zotregistry or docker registry).
 - **Ground Control** : Is responsible for the artifact synchronization with edge locations and function as a service endpoint for satellites. Ground control will register and authenticate satellites, provide a list of images that should be present on the satellite, and facilitate seamless replication of container images to edge locations. Ground Control includes adapters for different central registries, enabling seamless synchronization of image lists across various sources.
 
-![Basic Harbor Satellite Diagram](../images/harbor-satellite/harbor-satellite-diagram.svg)
-
-<p align="center"><em>Basic Harbor Satellite Diagram</em></p>
 
 ### Ground Control
 ![Ground Control](../images/harbor-satellite/ground-control.svg)
